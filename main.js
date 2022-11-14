@@ -24,6 +24,7 @@ let weatherRequest = async () => {
     //   day[values[key]] = res.daily[key][0]
     // }
     console.log(day)
+    console.log("Colter is working")
 
     console.log(res.daily.apparent_temperature_max)
     console.log(res.daily.apparent_temperature_max[1])
