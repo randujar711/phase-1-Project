@@ -1,4 +1,4 @@
-console.log('working')
+//console.log('working')
 
 let weatherURL = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=apparent_temperature_max,apparent_temperature_min&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York'
 
@@ -16,6 +16,8 @@ clothesForm.addEventListener("submit", async (e) => {
         })
     })
     let res = await req.json()
+    console.log(res)
+    
 })
 
 let weatherContainer = document.getElementById('conatiner')
@@ -23,36 +25,43 @@ let weatherContainer = document.getElementById('conatiner')
 let day_1 = document.getElementById('day1')
 let day1Img = document.getElementById('day1Img')
 let day1Btn = document.getElementById('btn')
+let day1List = document.getElementById('day1List')
 
 let day_2 = document.getElementById('day2')
 let day2Img = document.getElementById('day2Img')
 let day2Btn = document.getElementById('btn1')
+let day2List = document.getElementById('day2List')
 
 let day_3 = document.getElementById('day3')
 let day3Img = document.getElementById('day3Img')
 let day3Btn = document.getElementById('btn2')
+let day3List = document.getElementById('day3List')
 
 let day_4 = document.getElementById('day4')
 let day4Img = document.getElementById('day4Img')
 let day4Btn = document.getElementById('btn3')
+let day4List = document.getElementById('day4List')
 
 let day_5 = document.getElementById('day5')
 let day5Img = document.getElementById('day5Img')
 let day5Btn = document.getElementById('btn4')
+let day5List = document.getElementById('day5List')
 
 let day_6 = document.getElementById('day6')
 let day6Img = document.getElementById('day6Img')
 let day6Btn = document.getElementById('btn5')
+let day6List = document.getElementById('day6List')
 
 let day_7 = document.getElementById('day7')
 let day7Img = document.getElementById('day7Img')
 let day7Btn = document.getElementById('btn6')
+let day7List = document.getElementById('day7List')
 
 
 let weatherRequest = async () => {
     let req = await fetch(weatherURL)
     let res = await req.json()
-    console.log(res.daily)
+    //console.log(res.daily)
 
     let day1 = {}
     let day2 = {}
@@ -213,3 +222,69 @@ let weatherRequest = async () => {
 
 }
 weatherRequest()
+
+    let request = async () => {
+        let req = await fetch('http://localhost:3000/closet')
+        let res = await req.json()
+
+        console.log(res)
+        //console.log(res[0].kind)
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day1List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day2List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day3List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day4List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day5List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day6List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day6List.append(li)
+        })
+        res.forEach((obj) => {
+            console.log(obj.kind)
+            console.log(obj.name)
+            let li = document.createElement('li')
+            li.innerText = `${obj.kind}: ${obj.name}`
+            day7List.append(li)
+
+        })
+    }
+    request()
