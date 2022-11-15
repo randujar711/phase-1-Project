@@ -75,22 +75,29 @@
             </div>
         </div>-->
     </div>
-    <!--<form action="submit" id="clothes-form">
-        <input type="text" id="new clothes">
-        <select name="Category" id="">
-            <option value="Headwear"></option>
-            <option value="Shirt"></option>
-            <option value="Pants"></option>
-            <option value="Outerwear"></option>
-            <option value="Shoes"></option>
-            <option value="Accesories"></option>
-        </select>
-        <select name="Season" id="">
-            <option value="Winter"></option>
-            <option value="Fall"></option>
-            <option value="Summer"></option>
-            <option value="Spring"></option>
-        </select>
-    </form>-->
+    <div id="closet">
+        <form action="submit" id="clothes-form">
+            <h4>Add New Piece</h4>
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="clothes-name" />
+            <label for="category">Category: </label>
+            <select name="category" id="clothes-kind">
+                <option value="Headwear">Headwear</option>
+                <option value="Shirt">Shirt</option>
+                <option value="Pants">Pants</option>
+                <option value="Outerwear">Outerwear</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Accesories">Accessories</option>
+            </select>
+            <label for="season">Season: </label>
+            <select name="season" id="clothes-season">
+                <option value="Winter">Winter</option>
+                <option value="Fall">Fall</option>
+                <option value="Summer">Summer</option>
+                <option value="Spring">Spring</option>
+            </select>
+            <input type="submit" value="Add" />
+        </form>
+    </div>
 </body>
 </html>
