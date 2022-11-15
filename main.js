@@ -3,7 +3,7 @@ console.log('working')
 let weatherURL = 'https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&daily=apparent_temperature_max,apparent_temperature_min&temperature_unit=fahrenheit&windspeed_unit=mph&precipitation_unit=inch&timezone=America%2FNew_York'
 const clothesForm = document.getElementById("clothes-form")
 
-const newClothesItem = async (e) => {
+clothesForm.addEventListener("submit", async (e) => {
     e.preventDefault()
     let req = await fetch('http://localhost:3000/closet', {
         method: "POST",
@@ -15,7 +15,7 @@ const newClothesItem = async (e) => {
         })
     })
     let res = await req.json()
-}
+})
 
 let weatherContainer = document.getElementById('conatiner')
 let day_1 = document.getElementById('day1')
