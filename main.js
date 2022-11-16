@@ -218,8 +218,8 @@ weatherRequest()
         let req = await fetch('http://localhost:3000/closet')
         let res = await req.json()
 
-        //console.log(res)
-        //console.log(res[0].kind)
+        console.log(res)
+        console.log(res[0].kind)
         day1Btn.addEventListener('click', () => {
         res.forEach((obj) => {
             //console.log(obj.kind)
