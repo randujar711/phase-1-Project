@@ -84,141 +84,132 @@ let weatherRequest = async () => {
     day_1.append(`Day: ${day1.day} Min: ${day1.min} Max: ${day1.max}`)
 
     let day1Temp = day1.max && day1.min
-    day1Btn.addEventListener('click', () => {
-        if( day1Temp <= 20 ){
-            day1Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
-            }else if (day1Temp <= 40 ){
-            day1Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
-            }else if (day1Temp <= 60 ){
-            day1Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
-            }
-            else if (day1Temp <= 80 ){
-            day1Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
-            }
-            else if (day1Temp <= 100 ){
-            day1Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
+    if( day1Temp <= 20 ){
+        day1Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
+        }else if (day1Temp <= 40 ){
+        day1Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
+        }else if (day1Temp <= 60 ){
+        day1Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
-    })
+        else if (day1Temp <= 80 ){
+        day1Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
+        }
+        else if (day1Temp <= 100 ){
+        day1Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
+    }
 
 
     day_2.append(`Day: ${day2.day} Min: ${day2.min} Max: ${day2.max}`)
 
     let day2Temp = day2.max && day2.min
-    day2Btn.addEventListener('click', () => {
     if( day2Temp <= 20 ){
-        day2Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        day2Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day2Temp <= 40 ){
-        day2Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day2Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day2Temp <= 60 ){
-        day2Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day2Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day2Temp <= 80 ){
-        day2Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day2Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day2Temp <= 100 ){
-        day2Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
+        day2Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
     }
-    })
+
 
 
     day_3.append(`Day: ${day3.day} Min: ${day3.min} Max: ${day3.max}`)
 
     let day3Temp = day3.max && day3.min
-    day3Btn.addEventListener('click', () => {
     if( day3Temp <= 20 ){
-        day3Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+        day3Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day3Temp <= 40 ){
-        day3Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day3Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day3Temp <= 60 ){
-        day3Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day3Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day3Temp <= 80 ){
-        day3Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day3Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day3Temp <= 100 ){
-        day3Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
+        day3Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
     }
-    })
+
 
 
     day_4.append(`Day: ${day4.day} Min: ${day4.min} Max: ${day4.max}`)
-    let day4Temp = day4.max && day4.min
 
-    day4Btn.addEventListener('click', () => {
-        if( day4Temp <= 20 ){
-        day4Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    let day4Temp = day4.max && day4.min
+    if( day4Temp <= 20 ){
+        day4Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day4Temp <= 40 ){
-        day4Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day4Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day4Temp <= 60 ){
-        day4Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day4Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day4Temp <= 80 ){
-        day4Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day4Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day4Temp <= 100 ){
-        day4Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
-        }
-    })
+        day4Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
+    }
+    
 
 
     day_5.append(`Day: ${day5.day} Min: ${day5.min} Max: ${day5.max}`)
-    let day5Temp = day5.max && day5.min
 
-    day5Btn.addEventListener('click', () => {
-        if( day5Temp <= 20 ){
-        day5Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    let day5Temp = day5.max && day5.min
+    if( day5Temp <= 20 ){
+        day5Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day5Temp <= 40 ){
-        day5Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day5Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day5Temp <= 60 ){
-        day5Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day5Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day5Temp <= 80 ){
-        day5Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day5Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day5Temp <= 100 ){
-        day5Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
-        }
-    })
+        day5Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
+    }
 
 
     day_6.append(`Day: ${day6.day} Min: ${day6.min} Max: ${day6.max}`)
-    let day6Temp = day6.max && day6.min
 
-    day6Btn.addEventListener('click', () => {
-        if( day6Temp <= 20 ){
-        day6Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    let day6Temp = day6.max && day6.min
+    if( day6Temp <= 20 ){
+        day6Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day6Temp <= 40 ){
-        day6Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day6Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day6Temp <= 60 ){
-        day6Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day6Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day6Temp <= 80 ){
-        day6Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day6Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day6Temp <= 100 ){
-        day6Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
-        }
-    })
+        day6Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
+    }
+    
 
 
     day_7.append(`Day: ${day7.day} Min: ${day7.min} Max: ${day7.max}`)
-    let day7Temp = day7.max && day7.min
 
-    day7Btn.addEventListener('click', () => {
-        if( day7Temp <= 20 ){
-        day7Img.src = 'https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+    let day7Temp = day7.max && day7.min
+    if( day7Temp <= 20 ){
+        day7Img.src = 'https://cdn0.iconfinder.com/data/icons/weather-line-19/32/Thermometer_Cold-512.png'
         }else if (day7Temp <= 40 ){
-        day7Img.src = 'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'
+        day7Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-set/49/cold-512.png'
         }else if (day7Temp <= 60 ){
-        day7Img.src = 'https://thumbs.dreamstime.com/b/beautiful-rain-forest-ang-ka-nature-trail-doi-inthanon-national-park-thailand-36703721.jpg'
+        day7Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-season-28/60/cloud__sun__weather__climate__forecast-512.png'
         }
         else if (day7Temp <= 80 ){
-        day7Img.src = 'https://media.istockphoto.com/id/1354441996/photo/image-of-open-antique-book-on-wooden-table-with-glitter-overlay.jpg?b=1&s=170667a&w=0&k=20&c=O_VZbgONe4WTXPOEvwKYezhqFkzAXpr2g-lCdpdj5FU='
+        day7Img.src = 'https://cdn1.iconfinder.com/data/icons/weather-forecast-meteorology-color-1/128/weather-sunny-512.png'
         }
         else if (day7Temp <= 100 ){
-        day7Img.src = 'https://media.istockphoto.com/id/615398376/photo/new-york-city-nyc-usa.jpg?s=612x612&w=0&k=20&c=rlrsrt4jbORPDSOW5df06Ik_X_5iQo1rYQd53xSs4nw='
-        }
-    })
+        day7Img.src = 'https://cdn4.iconfinder.com/data/icons/spring-flat/58/017_-_Sun-512.png'
+    }
+
 
 }
 weatherRequest()
@@ -227,64 +218,72 @@ weatherRequest()
         let req = await fetch('http://localhost:3000/closet')
         let res = await req.json()
 
-        console.log(res)
+        //console.log(res)
         //console.log(res[0].kind)
+        day1Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day1List.append(li)
         })
+        })
+       day2Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day2List.append(li)
         })
+       })
+       day3Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day3List.append(li)
         })
+       })
+        day4Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day4List.append(li)
+
         })
+        })
+        day5Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day5List.append(li)
         })
+        })
+        day6Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day6List.append(li)
         })
-        res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
-            let li = document.createElement('li')
-            li.innerText = `${obj.kind}: ${obj.name}`
-            day6List.append(li)
         })
+        day7Btn.addEventListener('click', () => {
         res.forEach((obj) => {
-            console.log(obj.kind)
-            console.log(obj.name)
+            //console.log(obj.kind)
+            //console.log(obj.name)
             let li = document.createElement('li')
             li.innerText = `${obj.kind}: ${obj.name}`
             day7List.append(li)
-
         })
+        })
+
     }
     request()
