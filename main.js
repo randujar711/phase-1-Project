@@ -61,7 +61,7 @@ let day7List = document.getElementById('day7List')
 let weatherRequest = async () => {
     let req = await fetch(weatherURL)
     let res = await req.json()
-    //console.log(res.daily)
+    console.log(res.daily)
 
     let day1 = {}
     let day2 = {}
