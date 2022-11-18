@@ -35,6 +35,12 @@
       "kind": "Outerwear",
       "season": "Fall",
       "id": 6
+    },
+    {
+      "name": "Henley",
+      "kind": "Shirt",
+      "season": "Fall",
+      "id": 7
     }
   ]
 }

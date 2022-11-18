@@ -221,13 +221,9 @@ weatherRequest()
 
         console.log(res)
         console.log(res[0].kind)
-        let getClothesBySeason = (object, value) => {
-            return Object.value(res).find(key => object[key] === winter);
-        }
 
 
         const map = { "first": "1", "second": "2" };
-        console.log(getKeyByValue(map, "2"));
         day1Btn.addEventListener('click', () => {
         res.forEach((obj) => {
             //console.log(obj.kind)
