@@ -14,7 +14,7 @@ body{
 .container-fluid .card {
     width: 300px;
     height: 250px;
-    padding-right: 0;
+    padding: 10;
     /*glass morphism*/
         background: rgba(255, 255, 255, 0.2);
         border-radius: 16px;

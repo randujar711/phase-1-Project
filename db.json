@@ -17,6 +17,24 @@
       "name": "jeans",
       "kind": "pants",
       "season": "fall"
+    },
+    {
+      "name": "joggers",
+      "kind": "Pants",
+      "season": "Winter",
+      "id": 4
+    },
+    {
+      "name": "shorts",
+      "kind": "Pants",
+      "season": "Summer",
+      "id": 5
+    },
+    {
+      "name": "blazer",
+      "kind": "Outerwear",
+      "season": "Fall",
+      "id": 6
     }
   ]
 }
